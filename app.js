@@ -6,14 +6,9 @@ const app = express();
 
 app.use(express.json());
 
-/*
+
+
 app.get("/", (req,res)=>{
-    res.send("welcome to home page");
-});
-
-*/
-
-app.get("/users", (req,res)=>{
     res.send({ users })
 })
 
