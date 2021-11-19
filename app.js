@@ -6,10 +6,16 @@ const app = express();
 
 app.use(express.json());
 
-app
+/*
 app.get("/", (req,res)=>{
     res.send("welcome to home page");
 });
+
+*/
+
+app.get("/users", (req,res)=>{
+    res.send({ users })
+})
 
 app.post("/", (req,res)=>{
     const newUsers = [...users, req.body];
